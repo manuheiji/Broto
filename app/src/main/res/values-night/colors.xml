@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Força a mesma paleta cozy no modo noturno -->
+    <color name="bg_cozy">#FFF6E5</color>
+    <color name="text_terracotta">#D98C5F</color>
+    <color name="text_brown_dark">#D98C5F</color>
+    <color name="text_muted">#C9A68F</color>
+
+    <color name="btn_bg">@color/bg_cozy</color>
+
+    <color name="border_sun">#F4C95D</color>
+    <color name="btn_sol_border">@color/border_sun</color>
+
+    <color name="border_water">#7CC6E0</color>
+    <color name="btn_regar_border">@color/border_water</color>
+
+    <color name="border_adubar">#8DB580</color>
+    <color name="btn_adubar_border">@color/border_adubar</color>
+
+    <color name="btn_encerrar_border">@color/text_terracotta</color>
+
+    <color name="progress_bg">#EED8C1</color>
+    <color name="progress_fill">#8DB580</color>
+
+    <color name="color_sun">#F4C95D</color>
+    <color name="color_heart">#E75A70</color>
+    <color name="color_water">#7CC6E0</color>
+    <color name="card_bg">#FFF0D6</color>
+</resources>

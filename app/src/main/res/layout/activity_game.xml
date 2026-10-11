@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_cozy"
+    android:paddingStart="32dp"
+    android:paddingTop="36dp"
+    android:paddingEnd="32dp"
+    android:paddingBottom="32dp"
+    tools:context=".GameActivity">
+
+    <!-- Growth Label -->
+    <TextView
+        android:id="@+id/tvGrowthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.02"
+        android:text="Crescimento: 0%"
+        android:textColor="@color/text_terracotta"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Growth ProgressBar -->
+    <ProgressBar
+        android:id="@+id/pbGrowth"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGrowthLabel" />
+
+    <!-- Resource Indicators Layout (Sun, Hearts, Water) -->
+    <LinearLayout
+        android:id="@+id/llResources"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pbGrowth">
+
+        <!-- Sun Metric -->
+        <LinearLayout
+            android:id="@+id/llSun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivSunIcon"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:contentDescription="Sol"
+                android:src="@drawable/sol" />
+
+            <TextView
+                android:id="@+id/tvSunValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="50%"
+                android:textColor="@color/text_terracotta"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Lives / Hearts Metric -->
+        <LinearLayout
+            android:id="@+id/llHearts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivHeartIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="Vidas"
+                android:src="@drawable/vida" />
+
+            <TextView
+                android:id="@+id/tvHeartsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="3"
+                android:textColor="@color/text_terracotta"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Water Metric -->
+        <LinearLayout
+            android:id="@+id/llWater"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivWaterIcon"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:contentDescription="Água"
+                android:src="@drawable/agua" />
+
+            <TextView
+                android:id="@+id/tvWaterValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="50%"
+                android:textColor="@color/text_terracotta"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Event Banner (Event notification: Joaninha, Chuva, etc.) -->
+    <LinearLayout
+        android:id="@+id/llEventBanner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llResources">
+
+        <ImageView
+            android:id="@+id/ivEventIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Ícone do evento"
+            android:src="@drawable/joaninha" />
+
+        <TextView
+            android:id="@+id/tvEventDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:letterSpacing="0.02"
+            android:text="CUIDE DA SUA PLANTA HOJE!"
+            android:textColor="@color/text_terracotta"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Plant Image with onLongClick hint -->
+    <ImageView
+        android:id="@+id/ivPlant"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:contentDescription="Plantinha"
+        android:src="@drawable/broto_1"
+        app:layout_constraintBottom_toTopOf="@id/tvDayStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llEventBanner"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <!-- Day Status -->
+    <TextView
+        android:id="@+id/tvDayStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:letterSpacing="0.06"
+        android:text="DIA 1 / 7"
+        android:textColor="@color/text_terracotta"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvActionsStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Actions Remaining -->
+    <TextView
+        android:id="@+id/tvActionsStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:letterSpacing="0.04"
+        android:text="AÇÕES RESTANTES: 3"
+        android:textColor="@color/text_terracotta"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/llActionButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Action Buttons Row (SOL, REGAR, ADUBAR) -->
+    <LinearLayout
+        android:id="@+id/llActionButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/btnEncerrarDia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnSol"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sol_bg"
+            app:backgroundTint="@null"
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            android:text="SOL"
+            android:textColor="@color/text_terracotta"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegar"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_regar_bg"
+            app:backgroundTint="@null"
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            android:text="REGAR"
+            android:textColor="@color/text_terracotta"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnAdubar"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_adubar_bg"
+            app:backgroundTint="@null"
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            android:text="ADUBAR"
+            android:textColor="@color/text_terracotta"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Encerrar Dia Button -->
+    <Button
+        android:id="@+id/btnEncerrarDia"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:background="@drawable/btn_encerrar_bg"
+        app:backgroundTint="@null"
+        android:elevation="0dp"
+        android:letterSpacing="0.04"
+        android:stateListAnimator="@null"
+        android:text="ENCERRAR DIA"
+        android:textColor="@color/text_terracotta"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

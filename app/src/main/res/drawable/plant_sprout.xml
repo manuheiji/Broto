@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Soil mound with texture -->
+    <path
+        android:fillColor="#5A3E28"
+        android:pathData="M30,165 C35,145 60,135 100,135 C140,135 165,145 170,165 C175,178 160,188 100,188 C40,188 25,178 30,165 Z" />
+    <path
+        android:fillColor="#6F4D33"
+        android:pathData="M45,162 C50,148 70,140 100,140 C130,140 150,148 155,162 C158,172 145,182 100,182 C55,182 42,172 45,162 Z" />
+    <path
+        android:fillColor="#442E1D"
+        android:pathData="M65,160 C75,152 90,148 105,148 C120,148 135,152 140,160 C135,170 120,174 105,174 C90,174 70,170 65,160 Z" />
+
+    <!-- Sprout Stem -->
+    <path
+        android:fillColor="#58B246"
+        android:pathData="M97,145 C97,110 99,92 100,82 C101,92 103,110 103,145 Z" />
+
+    <!-- Left Leaf -->
+    <path
+        android:fillColor="#68C554"
+        android:pathData="M98,90 C80,85 58,95 62,110 C66,120 85,115 98,102 Z" />
+    <!-- Left Leaf Inner Accent -->
+    <path
+        android:fillColor="#7ED36B"
+        android:pathData="M96,93 C83,89 68,97 70,107 C74,113 87,110 96,101 Z" />
+
+    <!-- Right Leaf -->
+    <path
+        android:fillColor="#68C554"
+        android:pathData="M102,90 C120,85 142,95 138,110 C134,120 115,115 102,102 Z" />
+    <!-- Right Leaf Inner Accent -->
+    <path
+        android:fillColor="#7ED36B"
+        android:pathData="M104,93 C117,89 132,97 130,107 C126,113 113,110 104,101 Z" />
+</vector>

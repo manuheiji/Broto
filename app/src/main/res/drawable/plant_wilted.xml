@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Dry soil mound -->
+    <path
+        android:fillColor="#544337"
+        android:pathData="M30,165 C35,145 60,135 100,135 C140,135 165,145 170,165 C175,178 160,188 100,188 C40,188 25,178 30,165 Z" />
+    <path
+        android:fillColor="#3E3027"
+        android:pathData="M45,162 C50,148 70,140 100,140 C130,140 150,148 155,162 C158,172 145,182 100,182 C55,182 42,172 45,162 Z" />
+
+    <!-- Drooping bent stem -->
+    <path
+        android:strokeColor="#79745C"
+        android:strokeWidth="7"
+        android:strokeLineCap="round"
+        android:pathData="M100,145 C100,120 105,100 120,95 C132,90 140,102 142,118" />
+
+    <!-- Wilted yellow-brown drooping leaves -->
+    <path
+        android:fillColor="#8C825A"
+        android:pathData="M110,120 C95,125 80,138 85,150 C92,152 105,140 115,128 Z" />
+    <path
+        android:fillColor="#A1966B"
+        android:pathData="M135,102 C150,108 162,125 158,138 C150,140 138,128 132,112 Z" />
+    <path
+        android:fillColor="#7B734E"
+        android:pathData="M142,118 C145,130 148,142 140,148 C135,142 135,130 138,122 Z" />
+</vector>

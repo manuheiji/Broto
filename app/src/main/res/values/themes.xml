@@ -1,8 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Broto" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.Broto" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/bg_cozy</item>
+        <item name="android:textColor">@color/text_terracotta</item>
+        <item name="colorPrimary">@color/btn_encerrar_border</item>
+        <item name="android:fontFamily">@font/baloo_2</item>
+        <item name="fontFamily">@font/baloo_2</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="materialButtonStyle">@style/Widget.Broto.Button</item>
+    </style>
+
+    <style name="Widget.Broto.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/text_terracotta</item>
+        <item name="android:fontFamily">@font/baloo_2</item>
+        <item name="fontFamily">@font/baloo_2</item>
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
     </style>
 
     <style name="Theme.Broto" parent="Base.Theme.Broto" />

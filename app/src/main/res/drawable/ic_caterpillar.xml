@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- Caterpillar body segments -->
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M16,40m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+    <path
+        android:fillColor="#7CB342"
+        android:pathData="M26,36m-9,0a9,9 0,1 1,18 0a9,9 0,1 1,-18 0" />
+    <path
+        android:fillColor="#689F38"
+        android:pathData="M38,36m-9,0a9,9 0,1 1,18 0a9,9 0,1 1,-18 0" />
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M50,32m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0" />
+    <!-- Eye -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M54,28m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+    <!-- Antennas -->
+    <path
+        android:strokeColor="#558B2F"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M52,22 L50,14 M56,23 L58,14" />
+</vector>

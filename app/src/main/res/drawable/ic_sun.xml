@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- Sun center -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M32,32m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0" />
+    <path
+        android:fillColor="#FFCA28"
+        android:pathData="M32,32m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0" />
+    <!-- Rays -->
+    <path
+        android:strokeColor="#FFB300"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M32,6 L32,12 M32,52 L32,58 M6,32 L12,32 M52,32 L58,32 M13.6,13.6 L17.8,17.8 M46.2,46.2 L50.4,50.4 M13.6,50.4 L17.8,46.2 M46.2,17.8 L50.4,13.6" />
+</vector>

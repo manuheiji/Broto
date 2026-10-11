@@ -1,0 +1,65 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Soil mound -->
+    <path
+        android:fillColor="#5A3E28"
+        android:pathData="M30,165 C35,145 60,135 100,135 C140,135 165,145 170,165 C175,178 160,188 100,188 C40,188 25,178 30,165 Z" />
+    <path
+        android:fillColor="#6F4D33"
+        android:pathData="M45,162 C50,148 70,140 100,140 C130,140 150,148 155,162 C158,172 145,182 100,182 C55,182 42,172 45,162 Z" />
+
+    <!-- Stem -->
+    <path
+        android:fillColor="#58B246"
+        android:pathData="M96,145 C96,90 98,60 100,50 C102,60 104,90 104,145 Z" />
+
+    <!-- Big lush leaves -->
+    <path
+        android:fillColor="#68C554"
+        android:pathData="M98,110 C70,105 45,118 50,135 C56,145 80,138 98,122 Z" />
+    <path
+        android:fillColor="#68C554"
+        android:pathData="M102,110 C130,105 155,118 150,135 C144,145 120,138 102,122 Z" />
+    <path
+        android:fillColor="#7ED36B"
+        android:pathData="M98,80 C68,70 48,82 54,100 C60,110 82,105 98,92 Z" />
+    <path
+        android:fillColor="#7ED36B"
+        android:pathData="M102,80 C132,70 152,82 146,100 C140,110 118,105 102,92 Z" />
+
+    <!-- Flower Petals (Pink cozy flower) -->
+    <!-- Center top petal -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M100,45 C90,25 110,25 100,45 Z" />
+    <path
+        android:fillColor="#F06292"
+        android:pathData="M100,45m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0" />
+    <!-- 5 round petals -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M100,22m-13,0a13,13 0,1 1,26 0a13,13 0,1 1,-26 0" />
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M78,38m-13,0a13,13 0,1 1,26 0a13,13 0,1 1,-26 0" />
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M122,38m-13,0a13,13 0,1 1,26 0a13,13 0,1 1,-26 0" />
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M86,60m-13,0a13,13 0,1 1,26 0a13,13 0,1 1,-26 0" />
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M114,60m-13,0a13,13 0,1 1,26 0a13,13 0,1 1,-26 0" />
+
+    <!-- Flower center (Golden yellow) -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M100,45m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M100,45m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+</vector>

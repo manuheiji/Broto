@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- Water droplet -->
+    <path
+        android:fillColor="#29B6F6"
+        android:pathData="M32,8 C32,8 14,31 14,42 C14,52 22,60 32,60 C42,60 50,52 50,42 C50,31 32,8 32,8 Z" />
+    <!-- Highlight -->
+    <path
+        android:fillColor="#E1F5FE"
+        android:pathData="M24,38 C22,42 24,48 28,52 C26,50 24.5,46 25,41 C25.5,37 27,34 27,34 C27,34 25,36 24,38 Z" />
+</vector>
